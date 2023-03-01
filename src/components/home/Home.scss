@@ -1,0 +1,88 @@
+@import "../../index.scss";
+
+.home {
+    .container {
+        margin-top: 32px;
+        padding: 32px;
+        border-radius: 16px;
+        border: solid 2px $light;
+
+        .inputRange {
+            width: 48%;
+        }
+
+        .chart {
+            .row {
+                margin: 10px 0;
+                align-items: center;
+
+                &_name {
+                    width: 100px;
+                    
+                    &_additionalParams {
+                        span {
+                            font-size: 10px;
+                            cursor: pointer;
+
+                            &.active {
+                                color: $primary;
+                                font-weight: 900;
+                            }
+
+                            &:last-of-type {
+                                margin: 0 0 0 10px;
+                            }
+                        }
+                    }
+                }
+
+                &_input_block {
+                    width: 80%;
+                    position: relative;
+
+                    input {
+                        height: 26px;    
+                        background: rgba($color: $light, $alpha: 0.5);
+                        -webkit-appearance: none;
+                        appearance: none;
+                        outline: none;
+                        transition: 0.2s;
+
+                        &.max {
+                            background: $primary;
+                        }
+
+                        &::-webkit-slider-thumb {
+                            width: 0;
+                            height: 0;
+                            -webkit-appearance: none;
+                            appearance: none;
+                        }
+
+                        & + .price{
+                            position: absolute;
+                            right: 5px;
+                            top: calc((26px - 16px)/2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        .container{
+            display: flex;
+            flex-direction: column-reverse;
+
+            & > .row{
+                width: 100%;
+                flex-direction: column;
+
+                .inputRange{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
