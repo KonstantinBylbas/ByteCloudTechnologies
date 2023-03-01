@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/KonstantinBylbas/ByteCloudTechnologies/static/css/main.f2a4ed82.css",
+    "main.js": "/KonstantinBylbas/ByteCloudTechnologies/static/js/main.82c70f44.js",
+    "index.html": "/KonstantinBylbas/ByteCloudTechnologies/index.html",
+    "main.f2a4ed82.css.map": "/KonstantinBylbas/ByteCloudTechnologies/static/css/main.f2a4ed82.css.map",
+    "main.82c70f44.js.map": "/KonstantinBylbas/ByteCloudTechnologies/static/js/main.82c70f44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2a4ed82.css",
+    "static/js/main.82c70f44.js"
+  ]
+}
